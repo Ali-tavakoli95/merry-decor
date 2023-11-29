@@ -1,26 +1,51 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="nav1 container-fluid">
-        <a class="navbar-brand" href="">مری دکور (Merry Decor) <mat-icon>face_2</mat-icon></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.toggle()" id="menuIcon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span id="menuTitle"><a routerLink="">مری دکور (Merry Decor) <mat-icon>face_2</mat-icon></a></span>
+    <a mat-button routerLink="/home" class="top-menu-item">خانه</a>
+    <a mat-button routerLink="/work-samples" class="top-menu-item">نمونه کار</a>
+    <a mat-button routerLink="/baby-decor" class="top-menu-item">دکور بچه</a>
+    <a mat-button routerLink="/children-castle" class="top-menu-item">قلعه کودک</a>
+    <a mat-button routerLink="/children-castle" class="top-menu-item">کلبه کودک</a>
+    <a mat-button routerLink="/contact-us" class="top-menu-item">تماس با ما</a>
+</mat-toolbar>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home">خانه</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="work-samples">نمونه کار</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="baby-decor">دکور بچه</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="children-castle">قلعه کودک</a>
-                </li>
-            </ul>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav [fixedInViewport]="true" [fixedTopGap]="60" mode="push">
+        <div class="side-nav-items">
+            <div>
+                <a (click)="sidenav.close()" mat-button routerLink="/home"
+                    class="side-menu-item"><mat-icon>home</mat-icon> خانه</a>
+            </div>
+            <div>
+                <a (click)="sidenav.close()" mat-button routerLink="/work-samples"
+                    class="side-menu-item"><mat-icon>other_houses</mat-icon> نمونه کار</a>
+            </div>
+            <div>
+                <a (click)="sidenav.close()" mat-button routerLink="/baby-decor"
+                    class="side-menu-item"><mat-icon>other_houses</mat-icon> دکور بچه</a>
+            </div>
+            <div>
+                <a (click)="sidenav.close()" mat-button routerLink="/children-castle"
+                    class="side-menu-item"><mat-icon>other_houses</mat-icon> قلعه کودک</a>
+            </div>
+            <div>
+                <a (click)="sidenav.close()" mat-button routerLink="/children-castle"
+                    class="side-menu-item"><mat-icon>other_houses</mat-icon> کلبه کودک</a>
+            </div>
+            <div>
+                <a (click)="sidenav.close()" mat-button routerLink="/contact-us"
+                    class="side-menu-item"><mat-icon>support_agent</mat-icon> تماس با ما</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="main-content">
+            <router-outlet></router-outlet>
+            <footer>
+                <app-footer></app-footer>
+            </footer>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
