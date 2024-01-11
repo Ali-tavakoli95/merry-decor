@@ -88,6 +88,18 @@ h6 {
 
             h1 {
                 font-size: clamp(2rem, 7.5vw, 5rem);
+                // position: relative;
+
+                // &::after {
+                //     content: '|';
+                //     position: absolute;
+                //     left: 0;
+                //     color: gray;
+                //     width: 100%;
+                //     background-image: url(../../../assets/imgs/img.jpeg);
+                //     animation: typing 5s steps(25) alternate infinite,
+                //         line 1s infinite;
+                // }
 
                 span {
                     color: #cda274;
@@ -101,8 +113,19 @@ h6 {
             }
         }
     }
-
 }
+
+// @keyframes typing {
+//     to {
+//         width: 0%;
+//     }
+// }
+
+// @keyframes line {
+//     50% {
+//         color: transparent;
+//     }
+// }
 
 .contact-content h2+p {
     font-family: yekan;

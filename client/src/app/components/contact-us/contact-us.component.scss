@@ -28,13 +28,13 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        // align-items: center;
+        align-items: center;
         margin-top: 30px;
         flex-wrap: wrap;
 
 
         .contactInfo {
-            width: 50%;
+            // width: 50%;
             display: flex;
             flex-direction: column;
 
@@ -58,100 +58,101 @@
                     font-size: 16px;
                     color: #000000;
                     flex-direction: column;
-                    font-weight: 400;
+                    // font-weight: 400;
 
                     h3 {
+                        font-size: 1.3rem;
+                        font-family: yekan;
                         font-weight: 600;
                         color: #00bcd4;
+                    }
+
+                    p {
+                        font-family: yekan;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// }
+
+@media only screen and (max-width:991px) {
+    .contact {
+        padding: 50px;
+
+        .container {
+            flex-direction: column;
+
+            .contactInfo {
+                // width: 0%;
+                margin-bottom: 40px;
+
+                .box {
+                    .text {
+                        display: flex;
+                        margin-left: 20px;
+                        font-size: 16px;
+                        color: #000000;
+                        flex-direction: column;
+                        font-weight: 400;
+
+                        h3 {
+                            font-size: 1.3rem;
+                            font-family: yekan;
+                            font-weight: 600;
+                            color: #00bcd4;
+                        }
+
+                        p {
+                            font-size: 1.3rem;
+                            font-family: yekan;
+                        }
                     }
                 }
             }
         }
 
-        .image {
-            width: 60%;
-            min-height: 10%;
-            padding: 40px;
-
-            img {
-                padding-right: 10rem;
-                max-width: 50%;
-            }
-
-            // h2 {
-            //     font-size: 30px;
-            //     color: #333;
-            //     font-weight: 500;
-            // }
-
-            // .inputBox {
-            //     position: relative;
-            //     width: 100%;
-            //     margin-top: 10px;
-
-            //     input,
-            //     textarea {
-            //         width: 100%;
-            //         padding: 5px 0;
-            //         font-size: 16px;
-            //         margin: 10px 0;
-            //         border: none;
-            //         border-bottom: 2px solid #333;
-            //         outline: none;
-            //         resize: none;
-            //     }
-
-            //     span {
-            //         position: absolute;
-            //         right: 0;
-            //         padding: 5px 0;
-            //         font-size: 16px;
-            //         margin: 10px 0;
-            //         pointer-events: none;
-            //         transition: 0.5s;
-            //         color: #666;
-
-            //     }
-
-            //     input:focus~span,
-            //     input:valid~span,
-            //     textarea:focus~span,
-            //     textarea:valid~span {
-            //         color: #e91e63;
-            //         font-size: 12px;
-            //         transform: translateY(-20px);
-            //     }
-
-            //     input[type="submit"] {
-            //         width: 100px;
-            //         background: #00bcd4;
-            //         border: none;
-            //         cursor: pointer;
-            //         padding: 10px;
-            //         font-size: 18px;
-
-            //     }
-            // }
-        }
-    }
-}
-
-@media (max-width:991px) {
-    .contact {
-        padding: 50px;
-    }
-
-    .container {
-        flex-direction: column;
-
-        .contactInfo {
-            margin-bottom: 40px;
-
-        }
-
         .contactInfo,
         .contactForm {
             width: 100%;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:320px) {
+    .contact {
+        .container {
+            .contactInfo {
+
+                // margin-bottom: 40px;
+                .box {
+                    .text {
+                        display: flex;
+                        margin-left: 20px;
+                        // font-size: 16px;
+                        color: #000000;
+                        // flex-direction: column;
+                        // font-weight: 400;
+
+                        h3 {
+                            font-size: 1.1rem;
+                            font-family: yekan;
+                            font-weight: 600;
+                            color: 00bcd4;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                            font-family: yekan;
+                        }
+                    }
+                }
+            }
         }
     }
 }
