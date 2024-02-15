@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Image } from '../../models/image.model';
 import { GalleryCarouselComponent } from '../gallery-carousel/gallery-carousel.component';
+import { NgOptimizedImage } from '@angular/common'
 
 @Component({
   selector: 'app-work-samples',
   standalone: true,
-  imports: [CommonModule, GalleryCarouselComponent],
+  imports: [CommonModule, GalleryCarouselComponent, NgOptimizedImage],
   templateUrl: './work-samples.component.html',
   styleUrl: './work-samples.component.scss'
 })
@@ -120,7 +121,6 @@ export class WorkSamplesComponent implements OnInit {
   },
   ] as Array<Image>;
 
-  constructor() { }
 
   ngOnInit(): void {
 

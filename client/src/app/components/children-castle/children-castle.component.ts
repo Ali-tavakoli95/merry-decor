@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Image } from '../../models/image.model';
 import { GalleryCarouselComponent } from '../gallery-carousel/gallery-carousel.component';
+import { NgOptimizedImage } from '@angular/common'
 
 
 @Component({
   selector: 'app-children-castle',
   standalone: true,
-  imports: [CommonModule, GalleryCarouselComponent],
+  imports: [CommonModule, GalleryCarouselComponent, NgOptimizedImage],
   templateUrl: './children-castle.component.html',
   styleUrl: './children-castle.component.scss'
 })

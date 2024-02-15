@@ -1,23 +1,23 @@
 #menuTitle {
-    
 
-    a{
+
+    a {
         text-decoration: none;
         color: white;
         margin-left: 20px;
-        font-family: yekan;
+        font-family: vazir;
         font-weight: bold;
         font-size: 1.3rem;
     }
 }
 
 a {
-    font-family: yekan;
-    font-size: 1.3rem;
+    font-family: vazir;
+    font-size: 1rem;
 }
 
 .mat-toolbar {
-    height: 60px;
+    height: 66px;
 }
 
 .mat-sidenav {
@@ -33,7 +33,7 @@ a {
 .side-menu-item {
     color: white !important;
     margin-top: 20px;
-    font-family: yekan;
+    font-family: vazir;
     text-align: center;
 }
 
@@ -50,5 +50,18 @@ a {
 @media (max-width:900px) {
     .top-menu-item {
         display: none;
+    }
+}
+
+
+@media (max-width:330px) {
+    #menuTitle {
+        a {
+            font-size: 1rem;
+        }
+
+        .faceIcon {
+            font-size: 1rem;
+        }
     }
 }

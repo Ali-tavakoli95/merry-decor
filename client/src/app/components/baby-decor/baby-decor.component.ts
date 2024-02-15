@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Image } from '../../models/image.model';
 import { GalleryCarouselComponent } from '../gallery-carousel/gallery-carousel.component';
+import { NgOptimizedImage } from '@angular/common'
+
 
 @Component({
   selector: 'app-baby-decor',
   standalone: true,
-  imports: [CommonModule, GalleryCarouselComponent],
+  imports: [CommonModule, GalleryCarouselComponent, NgOptimizedImage],
   templateUrl: './baby-decor.component.html',
   styleUrl: './baby-decor.component.scss'
 })
