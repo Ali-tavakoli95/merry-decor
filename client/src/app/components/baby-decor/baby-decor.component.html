@@ -3,11 +3,12 @@
 
 <div class="container">
     <div class="gallery">
-        <div *ngFor="let image of images;let i = index " [style.gridRow]="image.row" [style.gridCol]="image.col"
-            class="image">
-            <img [src]="image.url" (click)="selectedImage = i">
+        @for (image of images; track $index) {
+        <div [style.gridRow]="image.row" [style.gridCol]="image.col" class="image">
+            <img [ngSrc]="image.url" width="400" height="200" (click)="selectedImage = $index">
             <span>+</span>
         </div>
+        }
     </div>
 </div>
 
