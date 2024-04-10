@@ -20,13 +20,12 @@ li {
     justify-content: space-evenly;
     align-items: center;
     padding: 100px 20px;
-    background-color: #f8f8f8;
+    background-color: #ececec;
 
-    //     // /* Styling hero content */
+    // /* Styling hero content */
     .hero-content {
         // flex: 1;
-        // padding-left: 50px;
-        // padding-right: 50px;
+        padding-left: 50px;
 
         h1 {
             font-size: 27px;
@@ -36,7 +35,7 @@ li {
 
             span {
                 font-family: "Lobster", sans-serif;
-                color: #e65100;
+                color: #3F51B5;
                 font-size: bold;
             }
         }
@@ -66,20 +65,14 @@ li {
     }
 }
 
-/* Styling hero image */
-.hero-image img {
-    max-width: 50%;
-    height: 50%;
-    border-radius: 10px;
-}
-
 /* Styling product showcase section */
 .product-showcase {
     padding: 80px 20px;
     text-align: center;
 
     h2 {
-        font-size: 24px;
+        font-size: 26px;
+        font-size: x-large;
         color: #333333;
         margin-bottom: 40px;
     }
@@ -127,152 +120,129 @@ li {
 .about-us {
     padding: 80px 20px;
     text-align: center;
-}
 
-.about-content h2 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 40px;
-}
+    .about-content {
+        h2 {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 40px;
+        }
 
-.about-content p {
-    font-size: 16px;
-    color: #666666;
-    margin-bottom: 20px;
-}
+        p {
+            font-size: 16px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+    }
 
-.team-members {
-    margin-top: 40px;
-}
+    .team-members {
+        margin-top: 40px;
 
-.team-members h3 {
-    font-size: 20px;
-    color: #333333;
-    margin-bottom: 20px;
-}
+        h3 {
+            font-size: 20px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
 
-/* Styling team members */
-.team-member {
-    display: inline-block;
-    margin-right: 30px;
-}
+        /* Styling team members */
+        .team-member {
+            display: inline-block;
+            margin-right: 30px;
 
-.team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
 
-.team-member h4 {
-    font-size: 18px;
-    color: #333333;
-    margin-bottom: 5px;
-}
+            h4 {
+                font-size: 18px;
+                color: #333333;
+                margin-bottom: 5px;
+            }
 
-.team-member p {
-    font-size: 16px;
-    color: #666666;
+            p {
+                font-size: 16px;
+                color: #666666;
+            }
+        }
+    }
+
 }
 
 /* Styling testimonials section */
 .testimonials {
     padding: 80px 20px;
     text-align: center;
-}
 
-.testimonials h2 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 40px;
-}
+    h2 {
+        font-size: 24px;
+        color: #333333;
+        margin-bottom: 40px;
+    }
 
-/* Styling individual testimonials */
-.testimonial {
-    background-color: #f8f8f8;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+    /* Styling individual testimonials */
+    .testimonial {
+        background-color: #f8f8f8;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-.testimonial-content p {
-    font-size: 16px;
-    color: #666666;
-    margin-bottom: 20px;
-}
+        .testimonial-content {
+            p {
+                font-size: 16px;
+                color: #666666;
+                margin-bottom: 20px;
+            }
 
-.testimonial-content cite {
-    font-style: italic;
-    font-size: 14px;
-    color: #999999;
+            cite {
+                font-style: italic;
+                font-size: 14px;
+                color: #999999;
+            }
+        }
+
+    }
+
 }
 
 /* Styling contact section */
 .contact {
     padding: 80px 20px;
     text-align: center;
-}
 
-.contact h2 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 40px;
-}
+    h2 {
+        font-size: 24px;
+        color: #333333;
+        margin-bottom: 40px;
+    }
 
-/* Styling contact info */
-.contact-info {
-    margin-bottom: 40px;
-}
+    /* Styling contact info */
+    .contact-info {
+        margin-bottom: 40px;
 
-.contact-info p {
-    font-size: 16px;
-    color: #666666;
-    margin-bottom: 20px;
-}
+        p {
+            font-size: 16px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
 
-.contact-info ul {
-    list-style-type: none;
-    padding: 0;
-}
+        ul {
+            list-style-type: none;
+            padding: 0;
 
-.contact-info ul li {
-    font-size: 16px;
-    color: #333333;
-    margin-bottom: 10px;
-}
+            li {
+                font-size: 16px;
+                color: #333333;
+                margin-bottom: 10px;
 
-.contact-info ul li a {
-    color: #ff6600;
-    text-decoration: none;
-}
-
-/* Styling contact form */
-.contact-form h3 {
-    font-size: 20px;
-    color: #333333;
-    margin-bottom: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #e65100;
+                a {
+                    color: #ff6600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
