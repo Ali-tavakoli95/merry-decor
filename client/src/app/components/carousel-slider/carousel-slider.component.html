@@ -1,7 +1,9 @@
 @if (images && images.length > 0) {
-<div class="carousle-container">
-    <img *ngFor="let image of images; let i=index" [src]="image.imageSrc" [alt]="image.imageAlt"
-        [ngClass]="{'image-active': selectedIndex === i}" class="fade">
+<div class="carousel-container">
+    @for (image of images; track $index) {
+    <img [src]="image.imageSrc" [alt]="image.imageAlt" [ngClass]="{'image-active': selectedIndex === $index}"
+        class="fade">
+    }
 
     @if (indicators) {
     <div class="carousel-dot-container">

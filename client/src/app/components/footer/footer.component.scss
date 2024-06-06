@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,14 +33,20 @@ ul {
     // position: relative;
     margin-bottom: 30px;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 22px;
     color: rgb(0, 0, 0);
-    font-family: yekan;
+    font-family: iran-sans;
+
+    span {
+        font-family: "Great Vibes", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
 }
 
-.footer-col p{
-    font-size: 1.2rem;
-    font-family: yekan;
+.footer-col p {
+    font-size: 1.1rem;
+    font-family: iran-sans;
     color: white;
 }
 
@@ -51,10 +65,10 @@ ul li:not(:last-child) {
 
 ul li a {
     display: block;
-    font-size: 19px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
-    font-family: yekan;
+    font-family: iran-sans;
     transition: 0.4s;
 }
 
@@ -77,6 +91,11 @@ ul li a:hover {
 }
 
 .links a:hover {
+    color: #4d4f55;
+    background-color: white;
+}
+
+.links a svg:hover {
     color: #4d4f55;
     background-color: white;
 }

@@ -1,6 +1,5 @@
 <h1>دکور بچه</h1>
 
-
 <div class="container">
     <div class="gallery">
         @for (image of images; track $index) {
@@ -11,9 +10,6 @@
         }
     </div>
 </div>
-
-
-
 
 @if (selectedImage != null) {
 <app-gallery-carousel (closeCarousel)="selectedImage = null" [images]="images"

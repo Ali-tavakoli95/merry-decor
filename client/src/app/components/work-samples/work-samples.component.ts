@@ -7,7 +7,9 @@ import { NgOptimizedImage } from '@angular/common'
 @Component({
   selector: 'app-work-samples',
   standalone: true,
-  imports: [CommonModule, GalleryCarouselComponent, NgOptimizedImage],
+  imports: [
+    CommonModule, GalleryCarouselComponent, NgOptimizedImage
+  ],
   templateUrl: './work-samples.component.html',
   styleUrl: './work-samples.component.scss'
 })

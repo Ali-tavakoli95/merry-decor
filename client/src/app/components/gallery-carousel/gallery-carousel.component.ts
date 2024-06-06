@@ -7,7 +7,9 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-gallery-carousel',
   standalone: true,
-  imports: [CommonModule, MatIconModule],
+  imports: [
+    CommonModule, MatIconModule
+  ],
   templateUrl: './gallery-carousel.component.html',
   styleUrl: './gallery-carousel.component.scss',
   animations: [

@@ -8,7 +8,9 @@ import { NgOptimizedImage } from '@angular/common'
 @Component({
   selector: 'app-children-castle',
   standalone: true,
-  imports: [CommonModule, GalleryCarouselComponent, NgOptimizedImage],
+  imports: [
+    CommonModule, GalleryCarouselComponent, NgOptimizedImage
+  ],
   templateUrl: './children-castle.component.html',
   styleUrl: './children-castle.component.scss'
 })

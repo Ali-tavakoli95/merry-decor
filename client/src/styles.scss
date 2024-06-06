@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
 
 
 @font-face {
@@ -18,7 +17,7 @@
 
 @font-face {
     font-family: iran-sans;
-    src: url('./assets/fonts/iran-sans/Iranian\ Sans.ttf');
+    src: url('./assets/fonts/iran-sans/IRANSansWebRegular.otf');
 }
 
 html,
@@ -28,5 +27,5 @@ body {
 
 body {
     margin: 0;
-    font-family: vazir;
+    font-family: iran-sans;
 }

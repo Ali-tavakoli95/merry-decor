@@ -1,4 +1,4 @@
-.carousle-container {
+.carousel-container {
     position: relative;
     margin: auto;
     text-align: center;
@@ -50,7 +50,6 @@
         opacity: 1;
     }
 }
-
 
 //image transition fade effect
 .fade {
@@ -116,7 +115,7 @@
 }
 
 @media only screen and (min-width:934px) {
-    .carousle-container {
+    .carousel-container {
         position: relative;
         margin: auto;
         text-align: center;

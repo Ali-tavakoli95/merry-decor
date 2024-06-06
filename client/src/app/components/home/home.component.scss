@@ -69,6 +69,7 @@ li {
 .product-showcase {
     padding: 80px 20px;
     text-align: center;
+    background: #f8f9fa;
 
     h2 {
         font-size: 26px;
@@ -120,7 +121,7 @@ li {
 .about-us {
     padding: 80px 20px;
     text-align: center;
-
+    background-color: #ececec;
     .about-content {
         h2 {
             font-size: 24px;
@@ -157,12 +158,14 @@ li {
             }
 
             h4 {
+                font-family: iran-sans;
                 font-size: 18px;
                 color: #333333;
                 margin-bottom: 5px;
             }
 
             p {
+                font-family: iran-sans;
                 font-size: 16px;
                 color: #666666;
             }
@@ -175,8 +178,10 @@ li {
 .testimonials {
     padding: 80px 20px;
     text-align: center;
+    background: #f8f9fa;
 
     h2 {
+        font-family: iran-sans;
         font-size: 24px;
         color: #333333;
         margin-bottom: 40px;
@@ -184,7 +189,7 @@ li {
 
     /* Styling individual testimonials */
     .testimonial {
-        background-color: #f8f8f8;
+        background-color: #f6f6f6;
         padding: 30px;
         margin-bottom: 30px;
         border-radius: 10px;
@@ -198,6 +203,7 @@ li {
             }
 
             cite {
+                font-family: iran-sans;
                 font-style: italic;
                 font-size: 14px;
                 color: #999999;
@@ -212,6 +218,7 @@ li {
 .contact {
     padding: 80px 20px;
     text-align: center;
+    background-color: #ececec;
 
     h2 {
         font-size: 24px;

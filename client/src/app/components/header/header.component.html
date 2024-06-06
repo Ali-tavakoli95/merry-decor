@@ -2,13 +2,23 @@
     <button mat-icon-button (click)="sidenav.toggle()" id="menuIcon" aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
     </button>
-    <span id="menuTitle"><a routerLink="">مری دکور (Merry Decor) <mat-icon class="faceIcon">face_2</mat-icon></a></span>
-    <a mat-button routerLink="/home" class="top-menu-item">خانه</a>
-    <a mat-button routerLink="/work-samples" class="top-menu-item">نمونه کار</a>
-    <a mat-button routerLink="/baby-decor" class="top-menu-item">دکور بچه</a>
-    <a mat-button routerLink="/children-castle" class="top-menu-item">قلعه کودک</a>
-    <a mat-button routerLink="/children-castlee" class="top-menu-item">کلبه کودک</a>
-    <a mat-button routerLink="/contact-us" class="top-menu-item">تماس با ما</a>
+    <span id="menuTitle"><a routerLink="/home" routerLinkActive>مری دکور (Merry Decor) <mat-icon
+                class="faceIcon">face_2</mat-icon></a></span>
+    <nav mat-tab-nav-bar [backgroundColor]="'primary'" [color]="'accent'" [tabPanel]="tabPanel">
+        <a mat-tab-link routerLink="/home" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive"
+            class="top-menu-item">خانه</a>
+        <a mat-tab-link routerLink="/work-samples" routerLinkActive #rla1="routerLinkActive" [active]="rla1.isActive"
+            class="top-menu-item">نمونه کار</a>
+        <a mat-tab-link routerLink="/baby-decor" routerLinkActive #rla2="routerLinkActive" [active]="rla2.isActive"
+            class="top-menu-item">دکور بچه</a>
+        <a mat-tab-link routerLink="/children-castle" routerLinkActive #rla3="routerLinkActive" [active]="rla3.isActive"
+            class="top-menu-item">قلعه کودک</a>
+        <a mat-tab-link routerLink="/children-castlee" routerLinkActive #rla4="routerLinkActive"
+            [active]="rla4.isActive" class="top-menu-item">کلبه کودک</a>
+        <a mat-tab-link routerLink="/contact-us" routerLinkActive #rla5="routerLinkActive" [active]="rla5.isActive"
+            class="top-menu-item">تماس با ما</a>
+    </nav>
+    <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 </mat-toolbar>
 
 <mat-sidenav-container>

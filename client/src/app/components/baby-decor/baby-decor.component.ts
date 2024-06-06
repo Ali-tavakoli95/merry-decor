@@ -4,11 +4,12 @@ import { Image } from '../../models/image.model';
 import { GalleryCarouselComponent } from '../gallery-carousel/gallery-carousel.component';
 import { NgOptimizedImage } from '@angular/common'
 
-
 @Component({
   selector: 'app-baby-decor',
   standalone: true,
-  imports: [CommonModule, GalleryCarouselComponent, NgOptimizedImage],
+  imports: [
+    CommonModule, GalleryCarouselComponent, NgOptimizedImage
+  ],
   templateUrl: './baby-decor.component.html',
   styleUrl: './baby-decor.component.scss'
 })
@@ -124,7 +125,4 @@ export class BabyDecorComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-
-  }
 }
